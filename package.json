@@ -1,18 +1,50 @@
 {
-  "name": "vaadin-grid",
-  "main": "vaadin-grid.js",
-  "dependencies": {
-    "@polymer/polymer": "^3.0.0",
-    "@vaadin/vaadin-button": "^2.2.1",
-    "@vaadin/vaadin-grid": "^5.4.12",
-    "@vaadin/vaadin-text-field": "^2.4.14"
-  },
-  "devDependencies": {
-    "@polymer/iron-demo-helpers": "^3.1.0",
-    "@polymer/test-fixture": "^4.0.2",
-    "@webcomponents/webcomponentsjs": "^2.0.0",
-    "chai": "^4.2.0",
-    "mocha": "^6.1.4",
-    "wct-mocha": "^1.0.1"
-  }
+    "name": "@wonkytech/vaadin",
+    "version": "0.0.1",
+    "description": "Attempting to build a Pika package for the Vaadin web components.",
+    "author": "Tim McMaster",
+    "homepage": "https://tmcmaster.github.io/vaadin-grid",
+    "license": "MIT",
+    "repository": "https://github.com/tmcmaster/vaadin-grid",
+    "pika": true,
+    "sideEffects": true,
+    "@pika/pack": {
+        "pipeline": [
+            [
+                "@pika/plugin-standard-pkg"
+            ],
+            [
+                "@pika/plugin-build-node"
+            ],
+            [
+                "@pika/plugin-build-web"
+            ]
+        ]
+    },
+    "scripts": {
+        "build": "pika build",
+        "version": "npm run build",
+        "publish": "pika publish",
+        "demo": "owc-dev-server",
+        "demo:open": "owc-dev-server --open demo",
+        "build:docs": "npm install && npx @pika/web --dest docs/web_modules",
+        "docs": "http-server docs",
+        "docs:open": "http-server --open docs"
+    },
+    "dependencies": {
+        "@vaadin/vaadin-button": "^2.2.1",
+        "@vaadin/vaadin-grid": "^5.4.12",
+        "@vaadin/vaadin-text-field": "^2.4.14",
+        "lit-element": "^2.0.1",
+        "lit-html": "^1.0.0"
+    },
+    "devDependencies": {
+        "@pika/pack": "^0.5.0",
+        "@pika/plugin-build-node": "^0.6.1",
+        "@pika/plugin-build-types": "^0.6.1",
+        "@pika/plugin-build-web": "^0.6.1",
+        "@pika/plugin-standard-pkg": "^0.6.1",
+        "@pika/types": "^0.6.1",
+        "owc-dev-server": "^0.3.0"
+    }
 }

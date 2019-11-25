@@ -1,11 +1,11 @@
 {
-    "name": "@wonkytech/vaadin",
-    "version": "0.0.4",
+    "name": "@wonkytech/vaadin-components",
+    "version": "0.0.5",
     "description": "Attempting to build a Pika package for the Vaadin web components.",
     "author": "Tim McMaster",
-    "homepage": "https://tmcmaster.github.io/vaadin-grid",
+    "homepage": "https://tmcmaster.github.io/vaadin-components",
     "license": "MIT",
-    "repository": "https://github.com/tmcmaster/vaadin-grid",
+    "repository": "https://github.com/tmcmaster/vaadin-components",
     "pika": true,
     "sideEffects": true,
     "@pika/pack": {

@@ -1,6 +1,6 @@
 {
-  "name": "@wonkytech/vaadin-grid",
-  "description": "Web component that extends LitElement.",
+  "name": "@wonkytech/vaadin",
+  "description": "Attempting to build a Pika package for the Vaadin web components.",
   "version": "0.0.1",
   "license": "MIT",
   "files": [
@@ -12,7 +12,9 @@
   "homepage": "https://tmcmaster.github.io/vaadin-grid",
   "repository": "https://github.com/tmcmaster/vaadin-grid",
   "dependencies": {
+    "@vaadin/vaadin-button": "^2.2.1",
     "@vaadin/vaadin-grid": "^5.4.12",
+    "@vaadin/vaadin-text-field": "^2.4.14",
     "lit-element": "^2.0.1",
     "lit-html": "^1.0.0"
   },
@@ -22,7 +24,8 @@
     "@pika/plugin-build-types": "^0.6.1",
     "@pika/plugin-build-web": "^0.6.1",
     "@pika/plugin-standard-pkg": "^0.6.1",
-    "@pika/types": "^0.6.1"
+    "@pika/types": "^0.6.1",
+    "owc-dev-server": "^0.3.0"
   },
   "esnext": "dist-src/index.js",
   "main": "dist-node/index.js",

@@ -10,19 +10,14 @@
     "sideEffects": true,
     "@pika/pack": {
         "pipeline": [
-            [
-                "@pika/plugin-standard-pkg"
-            ],
-            [
-                "@pika/plugin-build-node"
-            ],
+
             [
                 "@pika/plugin-build-web"
             ]
         ]
     },
     "scripts": {
-        "build": "pika build",
+        "build": "echo hi",
         "version": "npm run build",
         "publish": "pika publish",
         "demo": "owc-dev-server",

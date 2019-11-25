@@ -1,1 +1,1 @@
-import './vaadin-grid.js';
+import '@vaadin/vaadin-grid/vaadin-grid.js';
